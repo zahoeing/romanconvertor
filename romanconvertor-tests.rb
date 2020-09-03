@@ -36,11 +36,11 @@ class TestRomanConvertor < Test::Unit::TestCase
     end
 
     def test_toRoman_specialValues
-        @@randomValues.each{ |key, value| assert_equal(value, toRoman(key)) }
+        @@specialValues.each{ |key, value| assert_equal(value, toRoman(key)) }
     end
 
     def test_fromRoman_specialValues
-        @@randomValues.each{ |key, value| assert_equal(key, fromRoman(value)) }
+        @@specialValues.each{ |key, value| assert_equal(key, fromRoman(value)) }
     end
 
     def test_sanity
